@@ -13,12 +13,13 @@
   </a>
 </p>
 
-```
+
 # CrowdBench
 Joint project to CrowdGPT - The collaborative LLM benchmark.
 
 Anyone can submit a .crbench file to the folder benchmark/, following this template:
 
+```
 # CrowdBench Task
 # ID: math.algebra.0001
 # Category: mathematics
