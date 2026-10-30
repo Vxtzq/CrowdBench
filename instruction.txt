@@ -1,0 +1,1 @@
+Given a question on a domain, output the answer as \boxed{Answer} where "Answer" is the actual answer. Do not add anything else than answer in the boxed case, unless the question explicitly specifies it.
