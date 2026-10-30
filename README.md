@@ -12,6 +12,19 @@
     </picture>
   </a>
 </p>
-
+```
 # CrowdBench
 Joint project to CrowdGPT - The collaborative LLM benchmark.
+
+Anyone can submit a .crbench file to the folder benchmark/, following this template:
+
+# CrowdBench Task
+# ID: math.algebra.0001
+# Category: mathematics
+
+[question]
+What is the derivative of f(x) = 3x² + 2x + 7 at x = 5?
+
+[answer]
+\boxed{32}
+```
