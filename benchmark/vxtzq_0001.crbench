@@ -1,0 +1,9 @@
+# CrowdBench Task
+# ID: math.algebra.0001
+# Category: mathematics
+
+[question]
+What is the derivative of f(x) = 3x² + 2x + 7 at x = 5?
+
+[answer]
+\boxed{32}
