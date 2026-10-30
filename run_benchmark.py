@@ -8,4 +8,4 @@ parser = argparse.ArgumentParser(
 parser.add_argument('--model', help='HuggingFace model repository')      # option that takes a value
 args = parser.parse_args()
 
-print(args)
+print("Selected model", args.model)
