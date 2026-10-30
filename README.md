@@ -30,3 +30,9 @@ Your question here
 [answer]
 \boxed{Precise deterministic answer}
 ```
+
+# How it works
+The benchmark iterates over all the questions submitted, asks the LLM about it and monitors correctness.
+
+# Leaderboard
+Coming soon.
