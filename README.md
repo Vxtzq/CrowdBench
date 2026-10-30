@@ -31,6 +31,11 @@ Your question here
 \boxed{Precise deterministic answer}
 ```
 
+# Usage
+```
+python run_benchmark.py --model Vxtzq/Crowd-v1
+```
+
 # How it works
 The benchmark iterates over all the questions submitted, asks the LLM about it and monitors correctness.
 
