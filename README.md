@@ -25,8 +25,8 @@ Anyone can submit a .crbench file to the folder benchmark/, following this templ
 # Category: mathematics
 
 [question]
-What is the derivative of f(x) = 3x² + 2x + 7 at x = 5?
+Your question here
 
 [answer]
-\boxed{32}
+\boxed{Precise deterministic answer}
 ```
