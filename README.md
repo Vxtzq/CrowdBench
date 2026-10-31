@@ -48,3 +48,6 @@ The benchmark iterates over all the questions submitted, asks the LLM about it a
 
 # Leaderboard
 Coming soon.
+
+# AI notice
+I'm proud to say that this project is not AI slop 😄 and was 100% coded by myself
