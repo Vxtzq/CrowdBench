@@ -15,7 +15,7 @@ results = []
 
 model_name = args.model
 
-benches = glob.glob(os.path.abspath("benchmark/")+"*.crbench")
+benches = glob.glob("benchmark/*.crbench")
 
 total = len(benches)
 score = 0
@@ -41,6 +41,5 @@ with open("results/"+model_name.split("/")[1]+".txt", "a") as f:
       f.write("Benchmark " + result[0] + " SUCCEEDED")
     else:
       f.write("Benchmark " + result[0] + " FAILED")
-
 
 
