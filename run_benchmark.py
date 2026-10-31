@@ -18,6 +18,9 @@ file_name = args.file
 f = open(args.file)
 content = f.read()
 
+f = open("instruction.txt")
+instruct = f.read()
+
 def parse_crbench(content):
     question = content.split("[question]", 1)[1].split("[answer]", 1)[0].strip()
     answer = content.split("[answer]", 1)[1]
@@ -37,7 +40,7 @@ tokenizer = AutoTokenizer.from_pretrained(model_name)
 
 prompt = "Give me a short introduction to large language model."
 messages = [
-    {"role": "system", "content": "You are Qwen, created by Alibaba Cloud. You are a helpful assistant."},
+    {"role": "system", "content": instruct},
     {"role": "user", "content": q}
 ]
 text = tokenizer.apply_chat_template(
