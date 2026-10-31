@@ -2,7 +2,7 @@ import argparse
 
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-def run_benchmark(model_name,file_name,max_tokens=1024):
+def run_bench(model_name,file_name,max_tokens=1024):
   f = open(args.file)
   content = f.read()
   
