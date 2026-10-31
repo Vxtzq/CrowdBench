@@ -19,18 +19,22 @@ benches = glob.glob(os.path.abspath("benchmark/")+"*.crbench")
 
 total = len(benches)
 score = 0
+if total == 0:
+    print("No benchmarks found!")
+    exit()
+
 
 for bench in benches:
-  success = run_benchmark(model_name, bench)
+  success = run_bench(model_name, bench)
   results.append((bench,success))
   if success:
     score+=1
 
 print("benchmark score: ",score/total*100,"% for model", model_name)
 
-with open("demofile.txt", "w") as w:
+with open("results/"+model_name.split("/")[1]+".txt", "w") as f:
   f.write("")
-with open("demofile.txt", "a") as w:
+with open("results/"+model_name.split("/")[1]+".txt", "a") as f:
   f.write("Score " + str(score/total*100)+"%")
   for result in results:
     if result[1]:
