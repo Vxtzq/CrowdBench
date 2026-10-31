@@ -35,11 +35,11 @@ print("benchmark score: ",score/total*100,"% for model", model_name)
 with open("results/"+model_name.split("/")[1]+".txt", "w") as f:
   f.write("")
 with open("results/"+model_name.split("/")[1]+".txt", "a") as f:
-  f.write("Score " + str(score/total*100)+"%")
+  f.write("Score " + str(score/total*100)+"%\n\n")
   for result in results:
     if result[1]:
-      f.write("Benchmark " + result[0] + " SUCCEEDED")
+      f.write("Benchmark " + result[0] + " SUCCEEDED\n")
     else:
-      f.write("Benchmark " + result[0] + " FAILED")
+      f.write("Benchmark " + result[0] + " FAILED\n")
 
 
