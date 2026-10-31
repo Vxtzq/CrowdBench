@@ -21,8 +21,8 @@ Anyone can submit a .crbench file to the folder benchmark/, following this templ
 
 ```
 # CrowdBench Task
-# ID: math.algebra.0001
-# Category: mathematics
+# ID: domain.subdomain
+# Category: domain
 
 [question]
 Your question here
