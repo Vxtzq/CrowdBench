@@ -29,7 +29,7 @@ def parse_crbench(content):
 
 q, a = parse_crbench(content)
 
-
+a = a.replace("\n","")
 
 model = AutoModelForCausalLM.from_pretrained(
     model_name,
@@ -40,8 +40,8 @@ tokenizer = AutoTokenizer.from_pretrained(model_name)
 
 prompt = "Give me a short introduction to large language model."
 messages = [
-    {"role": "system", "content": instruct},
-    {"role": "user", "content": q}
+    {"role": "system", "content": "You are Qwen, created by Alibaba Cloud. You are a helpful assistant."},
+    {"role": "user", "content": instruct+q}
 ]
 text = tokenizer.apply_chat_template(
     messages,
@@ -59,6 +59,7 @@ generated_ids = [
 ]
 
 response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
+
 print(response)
 
 if a in response:
