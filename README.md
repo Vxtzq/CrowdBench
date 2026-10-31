@@ -41,7 +41,7 @@ python run_single_benchmark.py --model Vxtzq/Crowd-v1 --file benchmark/vxtzq_000
 ```
 python run_all_benchmarks.py --model Vxtzq/Crowd-v1
 ```
-It will write the result to results/model_name.txt
+It will write the result to results/Crowd-v1.txt
 
 # How it works
 The benchmark iterates over all the questions submitted, asks the LLM about it and monitors correctness.
