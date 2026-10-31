@@ -31,10 +31,16 @@ Your question here
 \boxed{Precise deterministic answer}
 ```
 
-# Usage
+# To test a model on a single benchmark
 ```
 python run_single_benchmark.py --model Vxtzq/Crowd-v1 --file benchmark/vxtzq_0001.crbench
 ```
+
+# To test a model on every benchmarks and get a score back
+```
+python run_all_benchmarks.py --model Vxtzq/Crowd-v1
+```
+It will write the result to results/model_name.txt
 
 # How it works
 The benchmark iterates over all the questions submitted, asks the LLM about it and monitors correctness.
