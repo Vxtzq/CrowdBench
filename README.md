@@ -33,7 +33,7 @@ Your question here
 
 # Usage
 ```
-python run_benchmark.py --model Vxtzq/Crowd-v1 --file benchmark/vxtzq_0001.crbench
+python run_single_benchmark.py --model Vxtzq/Crowd-v1 --file benchmark/vxtzq_0001.crbench
 ```
 
 # How it works
