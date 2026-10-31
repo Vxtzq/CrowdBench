@@ -15,7 +15,7 @@
 
 
 # CrowdBench
-Joint project to CrowdGPT - The collaborative LLM benchmark.
+Joint project to CrowdGPT - CrowdBench is a collaborative LLM benchmark.
 
 Anyone can submit a .crbench file to the folder benchmark/, following this template:
 
